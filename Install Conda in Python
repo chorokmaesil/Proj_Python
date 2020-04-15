@@ -1,0 +1,20 @@
+# Install Conda. 
+# It was written in Mac.
+# Before proceeding with the python study 
+
+# Anaconda Install
+Link: https://www.anaconda.com/distribution/
+
+Conda는 Anaconda에서 버전 관리를 위해 제공되는 애플리케이션.
+Python을 사용하다보면 다양한 환경에서 프로그래밍을 진행할 경우가 있다.
+그 이유는 파이썬의 유용한 애플리케이션들이 각 버전과 라이브러리에 대해 아주 많이 의존적이기 때문이다.
+Conda를 사용하면 용량 문제, 관리 문제, 충돌의 문제, 버전 호환성의 문제 등을 해결할 수 있다. 
+
+Conda는 기존 파이썬에 비해 용량이 매우 크지만 데이터 분석 등 다양한 라이브러리를 갖춘 파이썬을 배포한다.
+이 패키지에는 conda도 함께 포함되어 있다.
+Anaconda가 버거울 경우 miniconda도 지원하므로 환경에 맞게 사용하면 된다.
+
+
+
+자세한 내용은 아래 게시하였음
+......https://kangmin517.tistory.com/52?category=775720
