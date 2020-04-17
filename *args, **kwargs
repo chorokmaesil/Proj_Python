@@ -1,0 +1,71 @@
+# Python
+
+대부분 *args, **kwargs는 함수를 정의할 때 사용된다.
+
+*args와 **kwargs는 가변 갯수의 인자들을 함수에 넣어준다.
+
+# *args  == arguments
+
+# **kwargs == Keyword Arguments.
+
+
+
+# *args 사용법
+
+이 지시어는 몇 개의 인자를 받아야할 지 몰라 다 수의 인자를 함수로 받고자 할 때 쓰인다.
+
+자 무슨 말이냐면, 아래 코드를 보자.
+
+/*
+
+def testing_code(*numb):
+
+       for num in numb:
+
+             print("%s %s" % (num[0], num[1:3]), end=' ')
+
+       print("\n")
+
+
+
+testing_code('1')
+
+testing_code('1','2')
+
+testing_code('1','2','3')
+
+*/
+
+위에 코드를 보면 tuple 형태로 구성되어 있고 여러 개의 인자로 함수를 호출할 경우, 함수 내부에서는 튜플로 값을 받은 것처럼 처리한다.
+
+*args는 키워드되지 않은 가변 갯수의 인자들을 함수에 보낼 때 사용한다.
+
+
+
+
+
+# **kwargs 사용법
+
+키워드된 가변 갯수의 인자들을 함수에 보낼 때 사용하며,
+
+*args와 마찬가지로 몇개의 인자를 받아야할지 모를 때 사용하는데 Keyword로 된 args값을 인자로 받는다.
+
+Ex -> key : value 이런식으로.
+
+
+
+[예제 - **kwargs]
+def introduceName(**kwargs):
+  for key, value in kwargs.items():
+    print("{0} is {1}".format(key, value))
+
+introduceName(Name='Jason')
+>>> Name is Jason 이 출력된다.
+
+
+
+key = value 형태로 함수를 호출할 수 있으며, 그것은 그대로 딕셔너리 형태로 {'key':'value'} 와 같이 함수 내부로 전달된다.
+
+*items() : 사전 데이터(key + value 한 쌍)을 Return(dict_items)
+
+Add: ......https://kangmin517.tistory.com/54
